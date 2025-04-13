@@ -1,0 +1,46 @@
+ubuntu@ip-172-31-2-175:~$ mkdir my_folder
+ubuntu@ip-172-31-2-175:~$ ls -ltr 
+total 4
+drwxrwxr-x 2 ubuntu ubuntu 4096 Apr 13 15:02 my_folder
+ubuntu@ip-172-31-2-175:~$ cd my_folder/
+ubuntu@ip-172-31-2-175:~/my_folder$ ls -ltr
+total 0
+ubuntu@ip-172-31-2-175:~/my_folder$ touch my_file.txt
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+ubuntu@ip-172-31-2-175:~/my_folder$ ls -ltr
+total 0
+-rw-rw-r-- 1 ubuntu ubuntu 0 Apr 13 15:02 my_file.txt
+ubuntu@ip-172-31-2-175:~/my_folder$ cd ..
+ubuntu@ip-172-31-2-175:~$ cd my_folder/
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+ubuntu@ip-172-31-2-175:~/my_folder$ touch another_file.txt
+ubuntu@ip-172-31-2-175:~/my_folder$ ls -ltr
+total 0
+-rw-rw-r-- 1 ubuntu ubuntu 0 Apr 13 15:02 my_file.txt
+-rw-rw-r-- 1 ubuntu ubuntu 0 Apr 13 15:03 another_file.txt
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+
+==============================================================
+
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+ubuntu@ip-172-31-2-175:~/my_folder$ vi my_file.txt 
+ubuntu@ip-172-31-2-175:~/my_folder$ cat my_file.txt 
+This is my first assignment in devops class
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+ubuntu@ip-172-31-2-175:~/my_folder$ vi another_file.txt 
+ubuntu@ip-172-31-2-175:~/my_folder$ cat another_file.txt 
+This is my 2nd class, i had a good knowledge capture during the live class.
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+
+===============================================================
+
+ubuntu@ip-172-31-2-175:~/my_folder$ cat another_file.txt >> my_file.txt 
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+ubuntu@ip-172-31-2-175:~/my_folder$ cat my_file.txt 
+This is my first assignment in devops class
+This is my 2nd class, i had a good knowledge capture during the live class.
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+ubuntu@ip-172-31-2-175:~/my_folder$ 
+ubuntu@ip-172-31-2-175:~/my_folder$ cat another_file.txt 
+This is my 2nd class, i had a good knowledge capture during the live class.
+ubuntu@ip-172-31-2-175:~/my_folder$ 
